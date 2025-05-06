@@ -8,13 +8,13 @@ const { result, loading, error } = useQuery(GET_WEATHER, {});
 
 watch(result, (newResult) => {
   if (newResult) {
-    console.log("✅ Weather data:", newResult.getWeather);
+    console.log("Weather data:", newResult.getWeather);
   }
 });
 
 watch(error, (err) => {
   if (err) {
-    console.error("❌ GraphQL Error:", err);
+    console.error("GraphQL Error:", err);
   }
 });
 
@@ -82,7 +82,7 @@ const secondHalf = computed(() =>
               <p class="forecast-time">{{ hour.time }}</p>
               <div class="forecast-temp-icon">
                 <img
-                  :src="`https://openweathermap.org/img/wn/${hour.icon}@2x.png`"
+                  :src="``"
                   alt="Icon"
                   class="forecast-icon-img"
                 />
@@ -99,7 +99,7 @@ const secondHalf = computed(() =>
               <p class="forecast-time">{{ hour.time }}</p>
               <div class="forecast-temp-icon">
                 <img
-                  :src="`https://openweathermap.org/img/wn/${hour.icon}@2x.png`"
+                  :src="``"
                   alt="Icon"
                   class="forecast-icon-img"
                 />

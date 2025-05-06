@@ -22,13 +22,12 @@ html {
   z-index: 1;
 }
 
-/* Flex container for weather card and side content */
 .main-content {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   z-index: 2;
-  flex-wrap: wrap; /* enables wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .right-side {
@@ -46,7 +45,6 @@ html {
   font-size: 0.85rem;
 }
 
-/* Background image with blur */
 .background-img {
   position: absolute;
   top: 0;
@@ -60,7 +58,6 @@ html {
   z-index: 0;
 }
 
-/* Weather card styling */
 .weather-card {
   background-color: #ffe0b2;
   border-radius: 25px;
@@ -166,7 +163,6 @@ html {
   color: #9e6c00;
 }
 
-/* Forecast Bar */
 .forecast-bar {
   display: flex;
   gap: 1rem;
@@ -191,7 +187,6 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Side Text */
 .side-text {
   color: #ffffff;
   max-width: 600px;
@@ -207,7 +202,6 @@ html {
   line-height: 1.6;
 }
 
-/* Responsive tweak */
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;

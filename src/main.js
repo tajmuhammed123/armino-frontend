@@ -4,7 +4,7 @@ import App from './App.vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue-next/dist/bootstrap-vue-next.css';
 
-import * as BootstrapVueNext from 'bootstrap-vue-next'; // ✅ Use namespace import
+import * as BootstrapVueNext from 'bootstrap-vue-next';
 import { createPinia } from 'pinia';
 import { DefaultApolloClient } from '@vue/apollo-composable';
 import apolloClient from './graphql/client';
@@ -18,6 +18,6 @@ const app = createApp({
 });
 
 app.use(createPinia());
-app.use(BootstrapVueNext); // ✅ still valid here
+app.use(BootstrapVueNext);
 app.use(router);
 app.mount('#app');
